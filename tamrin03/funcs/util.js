@@ -6,6 +6,7 @@ function find(id,books){
     return bookFind;
 }
 function findIndex(id, people) {
+    
     const index = people.find((item) => {
         return item.id === Number(id);
     });
