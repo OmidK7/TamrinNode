@@ -5,12 +5,11 @@ function find(id,books){
     })
     return bookFind;
 }
-function findIndex(id, people) {
-    
-    const index = people.find((item) => {
+
+function findIndex(id, books) {
+    const index = books.find((item) => {
         return item.id === Number(id);
     });
-    console.log("index => ",index);
     return index;
 }
 

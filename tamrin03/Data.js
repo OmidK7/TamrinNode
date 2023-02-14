@@ -13,8 +13,8 @@ let getData = () => {
   });
 };
 let writeData = (dataIndx) => {
-  return new Promise((resolve, reject) => {
     const dataWrite = JSON.stringify(dataIndx);
+  return new Promise((resolve, reject) => {
     fs.writeFile("./books.json", dataWrite, (err, data) => {
       if (err) {
         reject(err);
